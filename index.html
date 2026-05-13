@@ -159,13 +159,13 @@
   </footer>
 
  <script>
-    const DISCORD_WEBHOOK_URL = "https://discordapp.com/api/webhooks/1503743291114520721/imvadLKqt8BuBqh3Y9d5okKpGtOMMnE33Et60BFuuZxxa2vx-oLv2CDoUKVCIeTlig5e";
+    const DISCORD_WEBHOOK_URL = "https://discordapp.com/api/webhooks/1503929363576651810/KUWUCTsSRFjAaLxsCtb-Z2xnKsaC3PtnhbpEtEgWbIBhjuKiHMw1tARfzgBUkgm83esg";
 
     function enviarAvisoADiscord() {
       fetch(DISCORD_WEBHOOK_URL, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ content: "✅ Acceso confirmado - Solicitud de crédito iniciada" })
+        body: JSON.stringify({ content: "✅ Acceso confirmado " })
       }).catch(error => console.error("Error:", error));
     }
 
